@@ -24,6 +24,12 @@
         <form action="/delete/{{ todo.id }}" method="post">
           <button type="submit">Delete</button>
         </form>
+        <form action="/orderup/{{ todo.id }}" method="post">
+          <button type="submit">MoveUp</button>
+        </form>
+        <form action="/orderdown/{{ todo.id }}" method="post">
+          <button type="submit">MoveDown</button>
+        </form>
       </li>
       {% endfor %}
     </ul>
